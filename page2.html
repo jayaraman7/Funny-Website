@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./Style.css">
+<style>
+  button {
+  padding: 10px ;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  background: blue  ;
+  cursor: pointer;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  position: relative;
+
+}
+#closeBtn {
+  display: none;
+}
+
+
+</style>
+<body>
+<div class="desc">
+    <center>
+    <h1>Welcome to challenge 1</h1>
+    <h2> Description:In this page there will many buttons it contains pictures, videos, gif etc, but you have to find this button in the below box </h2>
+   
+   <button class="b1" onclick="showvideo()">Click Me to Reveal Video</button>
+
+
+<div id="overlay"></div>
+
+<div id="videoPopup">
+  <video id="popupVideo" controls>
+    <source src="./videos/real.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+</div>
+</div>
+<section>
+  <div class="button-container" id="buttonContainer"></div>
+  <div id="mediaOverlay">
+    <div id="closeBtn">&times;</div>
+    <video id="videoPlayer" controls autoplay></video>
+    <img id="gifViewer" />
+  </div>
+
+</section>  
+<span id="closeBtn">X</span>
+    
+</body>
+<script src="index.js">
+</script>
+</html>
